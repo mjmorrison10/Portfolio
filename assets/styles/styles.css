@@ -4,6 +4,7 @@
 
 body, html {
 		background-color: #b22234;
+		position: absolute;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,10 +73,10 @@ h1, h2, h3, h4, h5, h6 {
 /*** About Section ***/
 
 #about {
-		margin-top: 10em;
+		margin-top: 14em;
 		border: 1px solid #eee;
 		background-color: #FFFFFF;
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 }
 
 #about img {
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #about h2 {
 		color: #3f4045;
-		font-size: 3.8em;
+		font-size: 3.5em;
 		padding-bottom: 1em;
 		text-shadow: 1px 1px 10px #3F4045;
 }
@@ -144,6 +145,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2em;
 }
 
+.fbicon:hover {
+	color: #3f4045;
+}
+
 
 /*** Experience ***/
 #experience {
@@ -195,20 +200,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** work ***/
 #work {
-	padding: 6em 4em 3em;
+	padding: 3em 4em 3em;
 	background-color: #fff;
 }
 
 #work h2 {
 	color: #3C3B6E;
-	margin-bottom: .7em;
+	margin-bottom: 0;
 }
 
 
 #work .tag-line {
 	color: #3C3B6E;
 	font-size: 1.4em;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 }
 
 #work .work-row {
