@@ -11,7 +11,7 @@ const Portfolio = function() {
 				text: "javascript",
 				weight: 14
 			}, {
-				text: "jquery",
+				text: "jQuery",
 				weight: 3
 			}, {
 				text: "programming",
