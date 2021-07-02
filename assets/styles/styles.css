@@ -4,7 +4,7 @@
 
 body, html {
 		background-color: #b22234;
-		position: absolute;
+		/* position: absolute; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -261,16 +261,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** teaching ***/
 #teaching {
+	/* position: absolute; */
+	background-color: #041e42;
+	width: 100%;
 	padding: 6em 4em 3em;
 }
 
 #teaching h2 {
-	color: #595959;
+	color: #B22234;
+	-webkit-text-stroke: 1pt white;
+
 }
 
 #teaching .tag-line {
-	color: #848282;
+	color: #B22234;
+	/* text-shadow: 5px 5px 2px white; */
 	font-size: 1.4em;
+	-webkit-text-stroke: .5px white;
 }
 
 #teaching .teaching-domains {
@@ -284,15 +291,16 @@ h1, h2, h3, h4, h5, h6 {
 /* The American Flag */
 
 #container {
+	/* position: absolute; */
+	display: flex;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60vh;
-	width: 100vw;
-	background: linear-gradient(90deg, #3C3B6E 20%, #B22234 100%);
+	/* height: 60vh; */
+	/* width: 100vw; */
   }
   .USA-flag {
 	width: 900px;
