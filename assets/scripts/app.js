@@ -2,32 +2,20 @@ const Portfolio = function() {
 	function makeWords() {
 		var words = [
 			{
-				text: "rapping",
-				weight: 12.3
+				text: "MSL",
+				weight: 22.3
 			}, {
-				text: "css3",
-				weight: 8
+				text: "css",
+				weight: 20
 			}, {
-				text: "javascript",
-				weight: 14
-			}, {
-				text: "jQuery",
-				weight: 3
-			}, {
+				text: "JavaScript",
+				weight: 24
+			},  {
 				text: "programming",
-				weight: 7
-			}, {
-				text: "python",
-				weight: 10
-			}, {
-				text: "java",
-				weight: 9
-			}, {
-				text: "qazi",
-				weight: 15
-			}, {
-				text: "newText",
-				weight: 7
+				weight: 22
+			},  {
+				text: "HTML",
+				weight: 20
 			}
 		];
 		return words;
@@ -41,6 +29,7 @@ const Portfolio = function() {
 		var count = 1;
 		$(window).on('scroll', function() {
 			var y_scroll_pos = window.pageYOffset;
+			var scroll_pos_test = 2700;
 			var words = makeWords();
 			if (y_scroll_pos > scroll_pos_test && count <= 1) {
 				makeWordCloud(words);
