@@ -1,42 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700");
 
 /*********** Global Styles********/
 
-body, html {
-		background-color: #b22234;
-		/* position: absolute; */
+body,
+html {
+  background-color: #b22234;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", sans-serif !important;
-	font-weight: 900 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 900 !important;
 }
 
 .wrapper {
-		background: #E3E3E3;
+  background: #e3e3e3;
 }
 
 .img-circle {
-		border-radius: 50%;
+  border-radius: 50%;
 }
 
 .my-button {
-		font-size: 1em;
-		line-height: normal;
-		text-transform: uppercase;
-		font-family: 'Lato', sans-serif;
-		font-weight: 900;
-		-webkit-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out, color 0.2s 0.3s;
-		letter-spacing: 0;
-		border-radius: 45px;
-		height: auto;
-		padding: .8em 2.1em;
+  font-size: 1em;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, color 0.2s 0.3s;
+  letter-spacing: 0;
+  border-radius: 45px;
+  height: auto;
+  padding: 0.8em 2.1em;
 }
 
 .my-button:hover {
-	cursor: pointer;
-	padding: .8em 2.7em;
+  cursor: pointer;
+  padding: 0.8em 2.7em;
 }
 
 .my-button:active,
@@ -45,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*#my-modal {
@@ -62,381 +67,383 @@ h1, h2, h3, h4, h5, h6 {
 
 /**********************************/
 
-
 /*** thin bar ***/
 
 .thin-bar {
-		border-bottom: 5px solid #F33F12;
+  border-bottom: 5px solid #f33f12;
 }
-
 
 /*** About Section ***/
 
 #about {
-		margin-top: 14em;
-		border: 1px solid #eee;
-		background-color: #FFFFFF;
-		padding-bottom: 1em;
+  margin-top: 14em;
+  border: 1px solid #eee;
+  background-color: #ffffff;
+  padding-bottom: 1em;
 }
 
 #about img {
-		max-width: 15em;
-		position: relative;
-		bottom: 7.5em;
+  max-width: 15em;
+  position: relative;
+  bottom: 7.5em;
 }
 
 #about .details {
-		margin-top: -2em;
+  margin-top: -2em;
 }
 
 #about h2 {
-		color: #3f4045;
-		font-size: 3.5em;
-		padding-bottom: 1em;
-		text-shadow: 1px 1px 10px #3F4045;
+  color: #3f4045;
+  font-size: 3.5em;
+  padding-bottom: 1em;
+  text-shadow: 1px 1px 10px #3f4045;
 }
 
 #about span {
-		font-weight: 300;
-		font-size: .7em;
+  font-weight: 300;
+  font-size: 0.7em;
 }
 
 #about h5 {
-		color: #8A8A8B;
+  color: #8a8a8b;
 }
 
 #about p {
-		margin-top: 1em;
-		color: #646464;
-		font-family: "roboto";
-		font-weight: 300;
+  margin-top: 1em;
+  color: #646464;
+  font-family: "roboto";
+  font-weight: 300;
 }
 
 .cta .cta-button {
-		color: #3F4045;
-		text-transform: uppercase;
-		border: 4px solid #B22234;
-		border-radius: 50px;
-		background: white;
+  color: #3f4045;
+  text-transform: uppercase;
+  border: 4px solid #b22234;
+  border-radius: 50px;
+  background: white;
 }
 
-.cta .cta-button:hover, .cta .cta-button:focus {
-		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-		background-color: #3C3B6E;
-		color: white;
+.cta .cta-button:hover,
+.cta .cta-button:focus {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 14px 1px rgba(0, 0, 0, 0.15);
+  background-color: #3c3b6e;
+  color: white;
 }
 
 #about i {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 .fa {
-	font-size: 2em;
-	padding: 0.1em 0.4em;
-	color: #3F4045;
+  font-size: 2em;
+  padding: 0.1em 0.4em;
+  color: #3f4045;
 }
 
 .fa:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .fbicon {
-	color: #3F4045;
-	font-size: 2em;
+  margin-left: 0.2em;
+  color: #3f4045;
+  font-size: 2em;
 }
 
 .fbicon:hover {
-	color: #3f4045;
+  color: #3f4045;
 }
-
 
 /*** Experience ***/
 #experience {
-	background-color: #3c3b6e;
-	padding: 6em 4em 5.6em;
+  background-color: #3c3b6e;
+  padding: 6em 4em 5.6em;
 }
 
 #experience h2 {
-	color: #FFF;
-	margin-bottom: .7em;
+  color: #fff;
+  margin-bottom: 0.7em;
 }
 
 #experience .tag-line {
-	color: white;
-	font-size: 1.4em;
+  color: white;
+  font-size: 1.4em;
 }
 
 #experience i {
-	color: #B22234;
-	font-size: 4em;
+  color: #b22234;
+  font-size: 4em;
 }
 
 #experience .fas {
-	margin-top: 1em;
-	font-size: 2em;
+  margin-top: 1em;
+  font-size: 2em;
 }
 
 #experience h3 {
-	color: #fff;
+  color: #fff;
 }
 
 #experience img {
-	height: 50px;
-	width: 100% auto;
+  height: 50px;
+  width: 100% auto;
 }
 
 .experience-topics p {
-	color: #ACAEB2;
-	font-family: "Maven pro", sans-serif;
-	/*font-weight: 500;*/
+  color: #acaeb2;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
 }
 
 .experience-topics ul li {
-	list-style: none;
-	color: #bbd2ff;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
+  list-style: none;
+  color: #bbd2ff;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+}
+
+#experience .row {
+  display: flex;
 }
 
 /*** work ***/
 #work {
-	padding: 3em 4em 3em;
-	background-color: #fff;
+  padding: 3em 4em 3em;
+  background-color: #fff;
 }
 
 #work h2 {
-	color: #3C3B6E;
-	margin-bottom: 0;
+  color: #3c3b6e;
+  margin-bottom: 0;
 }
 
-
 #work .tag-line {
-	color: #3C3B6E;
-	font-size: 1.4em;
-	margin-bottom: 2em;
+  color: #3c3b6e;
+  font-size: 1.4em;
+  margin-bottom: 2em;
 }
 
 #work .work-row {
-	margin-bottom: 5.5em;
+  margin-bottom: 2em;
 }
 
 .details h3 {
-	color: #b22234;
-	text-transform: uppercase;
+  margin-top: 0.5em;
+  color: #b22234;
+  text-transform: uppercase;
 }
 
-.details .platform{
-	font-size: 0.8em;
-	text-transform: uppercase;
-	margin: 2em 0 -0.1em;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #b22234;
+.details .platform {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 2em 0 -0.1em;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+  color: #b22234;
 }
 
 .details i {
-	color: #b22234;
-	margin-right: 1em;
+  color: #b22234;
+  margin-right: 1em;
 }
 
 .details p {
-	color: #30292F;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
-	margin-bottom: 1.8em;
+  color: #30292f;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 1.8em;
 }
 
-.details a, .details a:link, .details a:active{
-		color: #3C3B6E;
-		border: 4px solid #B22234 !important;
-		background-color: #fff;
+.details a,
+.details a:link,
+.details a:active {
+  color: #3c3b6e;
+  border: 4px solid #b22234 !important;
+  background-color: #fff;
 }
 
-.details a:hover, .details a:focus {
-		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: #3C3B6E !important;
-		color: #fff;
+.details a:hover,
+.details a:focus {
+  /* box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15); */
+  background-color: #3c3b6e !important;
+  color: #fff;
 }
 
 /*** teaching ***/
 #teaching {
-	/* position: absolute; */
-	background-color: #041e42;
-	width: 100%;
-	padding: 6em 4em 3em;
+  position: relative;
+  z-index: 0;
+  background-color: #041e42;
+  width: 100%;
+  padding: 6em 4em 3em;
 }
 
 #teaching h2 {
-	color: #B22234;
-	-webkit-text-stroke: 1pt white;
-
+  color: #b22234;
+  -webkit-text-stroke: 1pt white;
 }
 
 #teaching .tag-line {
-	color: #B22234;
-	/* text-shadow: 5px 5px 2px white; */
-	font-size: 1.4em;
-	-webkit-text-stroke: .5px white;
+  color: #b22234;
+  font-size: 1.4em;
+  -webkit-text-stroke: 0.5px white;
 }
 
 #teaching .teaching-domains {
-	height: 500px;
-	width: auto;
-	margin-top: -4em;
+  height: 300px;
+  width: auto;
+  margin-top: -4em;
 }
-
-
 
 /* The American Flag */
 
 #container {
-	/* position: absolute; */
-	display: flex;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* height: 60vh; */
-	/* width: 100vw; */
-  }
-  .USA-flag {
-	width: 900px;
-	min-width: 900px;
-	height: 450px;
-	box-shadow: 0px 20px 80px 10px rgba(0, 0, 0, 0.25);
-	position: relative;
-  }
-  @media (max-width: 1000px) {
-	.USA-flag {
-	  transform: scale(0.75);
-	}
-  }
-  @media (max-width: 725px) {
-	.USA-flag {
-	  transform: scale(0.5);
-	}
-  }
-  @media (max-width: 475px) {
-	.USA-flag {
-	  transform: scale(0.375);
-	}
-  }
-  @media (max-width: 340px) {
-	.USA-flag {
-	  transform: scale(0.325);
-	}
-  }
-  .stripe {
-	background-color: #B22234;
-	width: 100%;
-	height: calc(450px / 13);
-  }
-  .stripe--white {
-	background-color: white;
-  }
-  .USA-stars {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 378px;
-	height: calc((450px / 13) * 7);
-	background-color: #041e42;
-	z-index: 1;
-	padding: 12px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-  }
-  .star {
-	font-size: 20px;
-	color: white;
-	display: flex;
-	justify-content: center;
-	margin-top: -4px;
-  }
-  .star-row {
-	display: flex;
-	justify-content: space-between;
-  }
-  .star-row--five {
-	padding: 0px 33px;
-  }
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 60vh; */
+  /* width: 100vw; */
+}
 
+.USA-flag {
+  width: 900px;
+  min-width: 900px;
+  height: 450px;
+  box-shadow: 0px 20px 80px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .USA-flag {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 725px) {
+  .USA-flag {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 475px) {
+  .USA-flag {
+    transform: scale(0.375);
+  }
+}
+@media (max-width: 340px) {
+  .USA-flag {
+    transform: scale(0.325);
+  }
+}
+.stripe {
+  background-color: #b22234;
+  width: 100%;
+  height: calc(450px / 13);
+}
+.stripe--white {
+  background-color: white;
+}
+.USA-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 378px;
+  height: calc((450px / 13) * 7);
+  background-color: #041e42;
+  z-index: 1;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.star {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: -4px;
+}
+.star-row {
+  display: flex;
+  justify-content: space-between;
+}
+.star-row--five {
+  padding: 0px 33px;
+}
 
 /*** Footer Call-to-action ***/
 
 #footer-cta {
-	background-color: white;
-	padding: 6em 4em 5.6em;
+  background-color: white;
+  padding: 6em 4em 5.6em;
 }
 
 #footer-cta h2 {
-	color: #3C3B6E;
-	text-shadow: #5299D3;
+  color: #3c3b6e;
+  text-shadow: #5299d3;
 }
 
 #footer-cta p {
-	color: #3C3B6E;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	font-size: 1.2em;
+  color: #3c3b6e;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
 }
 
 #startButtonDiv {
-	margin-top: 3em;
+  margin-top: 3em;
 }
 
 #footer-cta a {
-	border: 4px solid #3C3B6E;
-	border-radius: 45px;
-	color: #B22234;
+  border: 4px solid #3c3b6e;
+  border-radius: 45px;
+  color: #b22234;
 }
 
 #footer-cta a:hover {
-	background: #fff;
-	color: #B22234;
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  color: #b22234;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
+    0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
 
 /*** footer starts ***/
 
 #footer {
-	padding: 5em 4em 2em;
+  padding: 5em 4em 2em;
 }
 
 #footer #logo {
-	background-color: #3C3B6E;
-	border-radius: 50%;
-	color: #fff;
-	padding: .4em;
-	font-family: "Maven pro", sans-serif;
-	font-size: 1.6em;
-	font-weight: 500;
-	display: inline;
+  background-color: #3c3b6e;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0.4em;
+  font-family: "Maven pro", sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  display: inline;
 }
 
 #footer #copyright {
-	margin-top: 1.6em;
-	font-family: "Maven pro", sans-serif;
-	font-weight: 500;
-	color: #3C3B6E;
-	text-shadow: 3px 3px 5px white;
-	background-color: white;
-	border-radius: 50%;
+  margin-top: 1.6em;
+  font-family: "Maven pro", sans-serif;
+  font-weight: 500;
+  color: #3c3b6e;
+  text-shadow: 3px 3px 5px white;
+  background-color: white;
+  border-radius: 50%;
 }
 
-
 .profile-photo {
-	width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-size: cover;
-    margin-top: -100px;
-    margin-bottom: 40px;
-
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: -100px;
+  margin-bottom: 40px;
 }
