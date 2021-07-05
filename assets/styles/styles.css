@@ -273,7 +273,6 @@ h6 {
 
 /*** teaching ***/
 #teaching {
-  position: relative;
   z-index: 0;
   background-color: #041e42;
   width: 100%;
@@ -316,7 +315,6 @@ h6 {
   min-width: 900px;
   height: 450px;
   box-shadow: 0px 20px 80px 10px rgba(0, 0, 0, 0.25);
-  position: relative;
 }
 @media (max-width: 1000px) {
   .USA-flag {
