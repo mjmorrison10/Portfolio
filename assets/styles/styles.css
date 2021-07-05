@@ -311,6 +311,7 @@ h6 {
 }
 
 .USA-flag {
+  position: relative;
   width: 900px;
   min-width: 900px;
   height: 450px;
