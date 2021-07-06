@@ -3,19 +3,19 @@ const Portfolio = function() {
 		var words = [
 			{
 				text: "MSL",
-				weight: 22.3
+				weight: 9.5
 			}, {
 				text: "css",
-				weight: 20
+				weight: 8.5
 			}, {
 				text: "JavaScript",
-				weight: 24
+				weight: 10
 			},  {
 				text: "programming",
-				weight: 22
+				weight: 9
 			},  {
 				text: "HTML",
-				weight: 20
+				weight: 8
 			}
 		];
 		return words;
