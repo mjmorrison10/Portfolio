@@ -249,7 +249,7 @@ h6 {
 .details .platform {
   font-size: 0.8em;
   text-transform: uppercase;
-  margin: 2em 0 -0.1em;
+  margin: 1em 0 -0.1em;
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
   color: var(--bgcolor-first);
@@ -265,7 +265,7 @@ h6 {
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
   font-size: 1.2em;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.2em;
 }
 
 .details a,
