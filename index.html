@@ -108,7 +108,9 @@
 			<div class="row work-row">
 				<!-- odd -->
 				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/project1.png" alt="">
+					<div class="container1">
+						<img src="assets/images/project1.png" onclick="onClick(this)" class="modal-hover-opacity">
+					</div>
 				</div>
 				<div class="small-12 medium-5 medium-pull-7 columns">
 					<div class="details details-ftm">
@@ -125,7 +127,9 @@
 			<div class="row work-row">
 				<!-- even -->
 				<div class="small-12 medium-6 columns">
-					<img src="assets/images/project2.png" alt="">
+					<div class="container1">
+						<img src="assets/images/project2.png" onclick="onClick(this)" class="modal-hover-opacity">
+					</div>
 				</div>
 				<div class="small-12 medium-5 medium-offset-1 columns">
 					<div class="details details-ftm">
@@ -140,9 +144,18 @@
 			</div>
 
 			<div class="row work-row">
-				<!-- odd -->
+				<!-- odd -->		
 				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/project3.png" alt="">
+					<div class="container1">
+						<img src="assets/images/project3.png" onclick="onClick(this)" class="modal-hover-opacity">
+					</div>
+					<!-- Modal -->
+					<div id="modal01" class="modal" onclick="this.style.display='none'">
+						<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<div class="modal-content">
+						  <img id="img01" style="max-width:100%">
+						</div>
+					  </div>
 				</div>
 				<div class="small-12 medium-5 medium-pull-7 columns">
 					<div class="details details-ftm">
