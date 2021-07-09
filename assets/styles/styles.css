@@ -24,10 +24,6 @@ h6 {
   font-weight: 900 !important;
 }
 
-.wrapper {
-  background: #e3e3e3;
-}
-
 .img-circle {
   border-radius: 50%;
 }
@@ -80,10 +76,39 @@ h6 {
   border-bottom: 5px solid #f33f12;
 }
 
+/*** Header ***/
+
+.navbar {
+  background-color: var(--bgcolor-second);
+  color: var(--bgcolor-third);
+  max-width: 1400px;
+  border: 0.25em solid var(--bgcolor-third);
+  height: 3em;
+  text-align: center;
+  margin: 0.5em auto;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.navbar a {
+  padding: 4em;
+  color: var(--bgcolor-third);
+  text-decoration: none; 
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 10px
+}
+
+.navbar li:hover {
+  background-color: #4c4b8d;
+}
+
 /*** About Section ***/
 
 #about {
-  margin-top: 14em;
+  margin-top: 10em;
   border: 1px solid #eee;
   background-color: var(--bgcolor-third);
   padding-bottom: 1em;
@@ -154,6 +179,9 @@ h6 {
 
 .fa:hover {
   cursor: pointer;
+  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
+  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
+  box-shadow:0 0 20px var(--bgcolor-second);
 }
 
 .fbicon {
@@ -164,6 +192,9 @@ h6 {
 
 .fbicon:hover {
   color: var(--text-main);
+  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
+  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
+  box-shadow:0 0 20px var(--bgcolor-second);
 }
 
 /*** Experience ***/
@@ -355,14 +386,17 @@ h6 {
   color: var(--bgcolor-first);
 }
 
-.det-link:hover {
+#work .det-link:hover {
+  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
+  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
+  box-shadow:0 0 20px var(--bgcolor-second);
   border-radius: 5em;
 }
 
 .details a:hover,
 .details a:focus {
   /* box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15); */
-  background-color: var(--bgcolor-second) !important;
+  background-color: var(--bgcolor-second);
   color: #fff;
 }
 
@@ -500,8 +534,8 @@ h6 {
 }
 
 #footer-cta a:hover {
-  background: #fff;
-  color: var(--bgcolor-first);
+  background: var(--bgcolor-first);
+  color: var(--bgcolor-third);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
     0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
@@ -567,6 +601,3 @@ h6 {
   }
 }
 
-/* @media (max-width: 425px) {
-
-} */
