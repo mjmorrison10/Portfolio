@@ -237,7 +237,15 @@ h6 {
 }
 
 #work .work-row {
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
+}
+
+#work img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+#work img:hover {
+  opacity: 0.75;
 }
 
 .details h3 {
@@ -268,12 +276,20 @@ h6 {
   margin-bottom: 1.2em;
 }
 
-.details a,
-.details a:link,
-.details a:active {
+.details a:not(.det-link),
+.details a:link:not(.det-link),
+.details a:active:not(.det-link) {
   color: var(--bgcolor-second);
   border: 4px solid var(--bgcolor-first) !important;
   background-color: #fff;
+}
+
+.det-link {
+  color: var(--bgcolor-first)
+}
+
+.det-link:hover {
+  border-radius: 5em;
 }
 
 .details a:hover,
