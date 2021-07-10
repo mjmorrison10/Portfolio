@@ -101,6 +101,7 @@ h6 {
   list-style-type: none;
   align-items: center;
   justify-content: space-evenly;
+  font-weight: bold;
 }
 
 .navbar li {
