@@ -22,7 +22,7 @@ const Portfolio = function() {
 	}
 
 	function makeWordCloud(words) {
-		$('.teaching-domains').jQCloud(words, {delay: 120});
+		$('.teaching-domains').jQCloud(words, {delay: 240});  // Seconds to load each word
 	}
 
 	function displayWordCloud() {
@@ -71,6 +71,7 @@ const Portfolio = function() {
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();
 
+// Clicking photos pop up
 
 function onClick(element) {
 	document.getElementById("img01").src = element.src;
