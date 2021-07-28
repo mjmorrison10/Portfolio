@@ -30,7 +30,10 @@ const Portfolio = function() {
 	}
 
 	function makeWordCloud(words) {
-		$('.teaching-domains').jQCloud(words, {delay: 120});  // Seconds to load each word
+		$('.teaching-domains').jQCloud(words, {
+			delay: 240,
+			autoResize: true,
+		});  
 	}
 
 	function displayWordCloud() {
@@ -81,4 +84,3 @@ Portfolio.typeAnimation();
 
 
 
-  

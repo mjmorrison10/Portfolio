@@ -2,16 +2,41 @@
 
 /*********** Global Styles********/
 :root {
-  --bgcolor-first: #b22234;
-  --bgcolor-second: #3c3b6e;
-  --bgcolor-third: white;
-  --text-main: #3f4045;
-  --text-accent: #30292f;
+
+  --blk: #fff000;
+
+  /* Color Red */
+  --flagRed-hue: 353;
+  --flagRed-saturation: 68%;
+  --flagRed-lightness: 42%;
+  --flagRed: hsl(var(--flagRed-hue), var(--flagRed-saturation), var(--flagRed-lightness));
+  
+  /* Color Blue */
+  --flagBlue-hue: 241;
+  --flagBlue-saturation: 30%;
+  --flagBlue-lightness: 33%;
+  --flagBlue: hsl(var(--flagBlue-hue), var(--flagBlue-saturation), var(--flagBlue-lightness));
+
+  /* Color White  */
+  --flagWhite: hsl(0, 0%, 100%);
+
+  /* Color Text Main */
+  --textMain-hue: 230;
+  --textMain-saturation: 5%;
+  --textMain-lightness: 26%;
+  --text-main: hsl(var(--textMain-hue), var(--textMain-saturation), var(--textMain-lightness));
+  
+  /* Color Text Accent */
+  --textAccent-hue: 309;
+  --textAccent-saturation: 10%;
+  --textAccent-lightness: 17%
+  --text-accent: hsl(var(--textAccent-hue) , var(--textAccent-saturation), var(--textAccent-lightness));
 }
 
 body,
 html {
-  background-color: var(--bgcolor-first);
+  scroll-behavior: smooth;
+  background-color: var(--flagRed);
 }
 
 .theme-light {
@@ -94,40 +119,42 @@ h6 {
 
 
 .navbar {
-  background-color: var(--bgcolor-second);
-  color: var(--bgcolor-third);
-  border: 0.25em solid var(--bgcolor-third);
+  background-color: var(--flagBlue);
+  color: var(--flagWhite);
+  border: 0.25em solid var(--flagWhite);
   height: 2em;
   text-align: center;
-  margin: 0.5em auto;
+  margin: 0.5em 2em;
   border-radius: 1em;
   overflow: hidden;
   max-width: 1400px;
 }
 
 .navbar a {
-  color: var(--bgcolor-third);
+  color: var(--flagWhite);
   text-decoration: none; 
 }
 
 .navbar ul {
   display: flex;
   list-style-type: none;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-evenly;
   font-weight: bold;
+  margin: auto;
 }
 
 .navbar li {
-  padding: 0 2em;
+  margin: auto;
+  padding: 0 1em;
 }
 
 .navbar li:hover {
-  background-color: #041e42;
+  background-color: hsl(var(--flagBlue-hue), var(--flagBlue-saturation), 43%);
   border-radius: 2em;
 }
 
-@media (max-width: 730px) {
+/* @media (max-width: 730px) {
   .navbar {
     height: 4em;
 
@@ -135,20 +162,27 @@ h6 {
   .navbar ul {
     flex-wrap: wrap;
   }
-}
+} */
 
-@media (max-width: 395px) {
+@media (max-width: 550px) {
+  .navbar {
+    height: 4em;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 360px) {
   .navbar {
     height: 5em;
   }
 }
-
 /*** About Section ***/
 
 #about {
   margin-top: 10em;
   border: 1px solid #eee;
-  background-color: var(--bgcolor-third);
+  background-color: var(--flagWhite);
   padding-bottom: 1em;
 }
 
@@ -188,17 +222,17 @@ h6 {
 .cta .cta-button {
   color: var(--text-main);
   text-transform: uppercase;
-  border: 4px solid var(--bgcolor-first);
+  border: 4px solid var(--flagRed);
   border-radius: 50px;
-  background: var(--bgcolor-third);
+  background: var(--flagWhite);
 }
 
 .cta .cta-button:hover,
 .cta .cta-button:focus {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
     0 4px 14px 1px rgba(0, 0, 0, 0.15);
-  background-color: var(--bgcolor-second);
-  color: var(--bgcolor-third);
+  background-color: var(--flagBlue);
+  color: var(--flagWhite);
 }
 
 #about i {
@@ -206,7 +240,7 @@ h6 {
 }
 
 .profile-photo {
-  border: 0.35em solid var(--bgcolor-second);
+  border: 0.35em solid var(--flagBlue);
 }
 
 .fa {
@@ -217,9 +251,9 @@ h6 {
 
 .fa:hover {
   cursor: pointer;
-  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
-  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
-  box-shadow:0 0 20px var(--bgcolor-second);
+  -webkit-box-shadow:0 0 20px var(--flagBlue); 
+  -moz-box-shadow: 0 0 20px var(--flagBlue); 
+  box-shadow:0 0 20px var(--flagBlue);
 }
 
 .fbicon {
@@ -230,14 +264,14 @@ h6 {
 
 .fbicon:hover {
   color: var(--text-main);
-  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
-  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
-  box-shadow:0 0 20px var(--bgcolor-second);
+  -webkit-box-shadow:0 0 20px var(--flagBlue); 
+  -moz-box-shadow: 0 0 20px var(--flagBlue); 
+  box-shadow:0 0 20px var(--flagBlue);
 }
 
 /*** Experience ***/
 #experience {
-  background-color: var(--bgcolor-second);
+  background-color: var(--flagBlue);
   padding: 6em 4em 5.6em;
 }
 
@@ -247,12 +281,12 @@ h6 {
 }
 
 #experience .tag-line {
-  color: var(--bgcolor-third);
+  color: var(--flagWhite);
   font-size: 1.4em;
 }
 
 #experience i {
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
   font-size: 4em;
 }
 
@@ -295,12 +329,12 @@ h6 {
 }
 
 #work h2 {
-  color: var(--bgcolor-second);
+  color: var(--flagBlue);
   margin-bottom: 0;
 }
 
 #work .tag-line {
-  color: var(--bgcolor-second);
+  color: var(--flagBlue);
   font-size: 1.4em;
   margin-bottom: 2em;
 }
@@ -320,14 +354,14 @@ h6 {
   -ms-overflow-style: none;
   /* scrollbar-width: none; */
   overflow-y: scroll;
-  border: 0.5em solid var(--bgcolor-second);
+  border: 0.5em solid var(--flagBlue);
   border-radius: 5em;
   margin: auto;
 }
 
 #work .containerWrap:hover {
-  -webkit-box-shadow: inset 0px 0px 25px 0px var(--bgcolor-second); 
-  box-shadow: inset 0px 0px 25px 0px var(--bgcolor-second);
+  -webkit-box-shadow: inset 0px 0px 25px 0px var(--flagBlue); 
+  box-shadow: inset 0px 0px 25px 0px var(--flagBlue);
 }
 
 #work .work-row {
@@ -427,7 +461,7 @@ h6 {
 
 .details h3 {
   margin-top: 0.5em;
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
   text-transform: uppercase;
 }
 
@@ -437,11 +471,11 @@ h6 {
   margin: 1em 0 -0.1em;
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
 }
 
 .details i {
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
   margin-right: 1em;
 }
 
@@ -456,46 +490,47 @@ h6 {
 .details a:not(.det-link),
 .details a:link:not(.det-link),
 .details a:active:not(.det-link) {
-  color: var(--bgcolor-second);
-  border: 4px solid var(--bgcolor-first) !important;
+  color: var(--flagBlue);
+  border: 4px solid var(--flagRed) !important;
   background-color: #fff;
 }
 
 .det-link {
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
 }
 
 #work .det-link:hover {
-  -webkit-box-shadow:0 0 20px var(--bgcolor-second); 
-  -moz-box-shadow: 0 0 20px var(--bgcolor-second); 
-  box-shadow:0 0 20px var(--bgcolor-second);
+  -webkit-box-shadow:0 0 20px var(--flagBlue); 
+  -moz-box-shadow: 0 0 20px var(--flagBlue); 
+  box-shadow:0 0 20px var(--flagBlue);
   border-radius: 5em;
 }
 
 .details a:hover,
 .details a:focus {
   /* box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15); */
-  background-color: var(--bgcolor-second);
+  background-color: var(--flagBlue);
   color: #fff;
 }
 
 /*** teaching ***/
 #teaching {
   z-index: 0;
-  background-color: var(--bgcolor-second);
+  background-color: var(--flagBlue);
   width: 100%;
-  padding: 6em 4em 3em;
+  padding: 2em;
+  /* padding: 6em 4em 3em; */
 }
 
 #teaching h2 {
-  color: var(--bgcolor-first);
-  -webkit-text-stroke: 1pt var(--bgcolor-third);
+  color: var(--flagRed);
+  -webkit-text-stroke: 1pt var(--flagWhite);
 }
 
 #teaching .tag-line {
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
   font-size: 1.4em;
-  -webkit-text-stroke: 0.5px var(--bgcolor-third);
+  -webkit-text-stroke: 0.5px var(--flagWhite);
 }
 
 #teaching .teaching-domains {
@@ -586,17 +621,17 @@ h6 {
 /*** Footer Call-to-action ***/
 
 #footer-cta {
-  background-color: var(--bgcolor-third);
+  background-color: var(--flagWhite);
   padding: 6em 4em 5.6em;
 }
 
 #footer-cta h2 {
-  color: var(--bgcolor-second);
+  color: var(--flagBlue);
   text-shadow: #5299d3;
 }
 
 #footer-cta p {
-  color: var(--bgcolor-second);
+  color: var(--flagBlue);
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
   font-size: 1.2em;
@@ -607,14 +642,14 @@ h6 {
 }
 
 #footer-cta a {
-  border: 4px solid var(--bgcolor-second);
+  border: 4px solid var(--flagBlue);
   border-radius: 45px;
-  color: var(--bgcolor-first);
+  color: var(--flagRed);
 }
 
 #footer-cta a:hover {
-  background: var(--bgcolor-first);
-  color: var(--bgcolor-third);
+  background: var(--flagRed);
+  color: var(--flagWhite);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18),
     0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
@@ -626,7 +661,7 @@ h6 {
 }
 
 #footer #logo {
-  background-color: var(--bgcolor-second);
+  background-color: var(--flagBlue);
   border-radius: 50%;
   color: #fff;
   padding: 0.4em;
@@ -640,8 +675,8 @@ h6 {
   margin-top: 1.6em;
   font-family: "Maven pro", sans-serif;
   font-weight: 500;
-  color: var(--bgcolor-second);
-  background-color: var(--bgcolor-third);
+  color: var(--flagBlue);
+  background-color: var(--flagWhite);
   border-radius: 50%;
 }
 
