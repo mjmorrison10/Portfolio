@@ -124,7 +124,7 @@ h6 {
   border: 0.25em solid var(--flagWhite);
   height: 2em;
   text-align: center;
-  margin: 0.5em 2em;
+  margin: 0.5em auto;
   border-radius: 1em;
   overflow: hidden;
   max-width: 1400px;
