@@ -127,7 +127,7 @@ h6 {
   margin: 0.5em auto;
   border-radius: 1em;
   overflow: hidden;
-  max-width: 1400px;
+  max-width: 85%;
 }
 
 .navbar a {
@@ -322,10 +322,12 @@ h6 {
   flex-wrap: wrap;
 }
 
-/*** work ***/
+/*** Projects ***/
+
+
 #work {
   padding: 3em 4em 3em;
-  background-color: #fff
+  background-color: var(--flagWhite);
 }
 
 #work h2 {
@@ -675,10 +677,10 @@ h6 {
 #footer #copyright {
   margin-top: 1.6em;
   font-family: "Maven pro", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--flagBlue);
   background-color: var(--flagWhite);
-  border-radius: 50%;
+  border-radius: 25px;
 }
 
 .profile-photo {

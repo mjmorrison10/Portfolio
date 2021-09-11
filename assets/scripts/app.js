@@ -43,6 +43,10 @@ const Portfolio = (function () {
         text: "Tailwind",
         weight: 9,
       },
+      {
+        text: "Firebase",
+        weight: 9,
+      },
     ];
     return words;
   }
