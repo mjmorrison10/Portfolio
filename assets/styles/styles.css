@@ -2,20 +2,27 @@
 
 /*********** Global Styles********/
 :root {
-
   --blk: #fff000;
 
   /* Color Red */
   --flagRed-hue: 353;
   --flagRed-saturation: 68%;
   --flagRed-lightness: 42%;
-  --flagRed: hsl(var(--flagRed-hue), var(--flagRed-saturation), var(--flagRed-lightness));
-  
+  --flagRed: hsl(
+    var(--flagRed-hue),
+    var(--flagRed-saturation),
+    var(--flagRed-lightness)
+  );
+
   /* Color Blue */
   --flagBlue-hue: 241;
   --flagBlue-saturation: 30%;
   --flagBlue-lightness: 33%;
-  --flagBlue: hsl(var(--flagBlue-hue), var(--flagBlue-saturation), var(--flagBlue-lightness));
+  --flagBlue: hsl(
+    var(--flagBlue-hue),
+    var(--flagBlue-saturation),
+    var(--flagBlue-lightness)
+  );
 
   /* Color White  */
   --flagWhite: hsl(0, 0%, 100%);
@@ -24,13 +31,21 @@
   --textMain-hue: 230;
   --textMain-saturation: 5%;
   --textMain-lightness: 26%;
-  --text-main: hsl(var(--textMain-hue), var(--textMain-saturation), var(--textMain-lightness));
-  
+  --text-main: hsl(
+    var(--textMain-hue),
+    var(--textMain-saturation),
+    var(--textMain-lightness)
+  );
+
   /* Color Text Accent */
   --textAccent-hue: 309;
   --textAccent-saturation: 10%;
-  --textAccent-lightness: 17%
-  --text-accent: hsl(var(--textAccent-hue) , var(--textAccent-saturation), var(--textAccent-lightness));
+  --textAccent-lightness: 17%;
+  --text-accent: hsl(
+    var(--textAccent-hue),
+    var(--textAccent-saturation),
+    var(--textAccent-lightness)
+  );
 }
 
 body,
@@ -51,7 +66,6 @@ html {
   --color-accent: #12cdea;
   --font-color: #ffffff;
 }
-
 
 h1,
 h2,
@@ -121,14 +135,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4em
+  height: 4em;
 }
 
 .navbar {
   background-color: var(--flagBlue);
   border: 0.25em solid var(--flagWhite);
   max-width: 85%;
-  border-radius: 1em;
+  border-radius: 50px;
   min-height: 3em;
   width: 100%;
   display: flex;
@@ -147,8 +161,6 @@ header {
   width: 100%;
 }
 
-
-
 .navbar li {
   padding: 0.2em;
   transition-duration: 1s;
@@ -163,7 +175,6 @@ header {
 .navbar a {
   color: var(--flagWhite);
 }
-
 
 @media (max-width: 550px) {
   .navbar ul {
@@ -180,7 +191,6 @@ header {
     height: 7em;
   }
 }
-
 
 /*** About Section ***/
 
@@ -241,6 +251,7 @@ header {
 }
 
 #about i {
+  border-radius: 50px;
   margin-top: 2em;
 }
 
@@ -256,12 +267,14 @@ header {
 
 .fa:hover {
   cursor: pointer;
-  -webkit-box-shadow:0 0 20px var(--flagBlue); 
-  -moz-box-shadow: 0 0 20px var(--flagBlue); 
-  box-shadow:0 0 20px var(--flagBlue);
+  -webkit-box-shadow: 0 0 20px var(--flagBlue);
+  -moz-box-shadow: 0 0 20px var(--flagBlue);
+  box-shadow: 0 0 20px var(--flagBlue);
 }
 
 .fbicon {
+  border-radius: 25px;
+  padding: 5px;
   margin-left: 0.2em;
   color: var(--text-main);
   font-size: 2em;
@@ -269,9 +282,9 @@ header {
 
 .fbicon:hover {
   color: var(--text-main);
-  -webkit-box-shadow:0 0 20px var(--flagBlue); 
-  -moz-box-shadow: 0 0 20px var(--flagBlue); 
-  box-shadow:0 0 20px var(--flagBlue);
+  -webkit-box-shadow: 0 0 20px var(--flagBlue);
+  -moz-box-shadow: 0 0 20px var(--flagBlue);
+  box-shadow: 0 0 20px var(--flagBlue);
 }
 
 /*** Experience ***/
@@ -327,8 +340,21 @@ header {
   flex-wrap: wrap;
 }
 
-/*** Projects ***/
+/* #experience .spinnerstart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: ;
+  flex-grow: 1;
+}
+#experience .spinner {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  background-color: pink;
+} */
 
+/*** Projects ***/
 
 #work {
   padding: 3em 4em 3em;
@@ -354,7 +380,6 @@ header {
   cursor: pointer;
 }
 
-
 #work .containerWrap {
   max-width: 1200px;
   height: 450px;
@@ -369,7 +394,7 @@ header {
 }
 
 #work .containerWrap:hover {
-  -webkit-box-shadow: inset 0px 0px 25px 0px var(--flagBlue); 
+  -webkit-box-shadow: inset 0px 0px 25px 0px var(--flagBlue);
   box-shadow: inset 0px 0px 25px 0px var(--flagBlue);
 }
 
@@ -380,13 +405,12 @@ header {
   flex-wrap: wrap;
 }
 
-@media (max-width:763px) {
+@media (max-width: 763px) {
   #work .my-button {
     padding: 0.5em;
   }
   #work .containerWrap {
     padding: 1em;
-  
   }
   #work {
     padding: 2em;
@@ -396,7 +420,6 @@ header {
 #work .containerWrap::-webkit-scrollbar {
   display: none;
 }
-
 
 .modal {
   z-index: 2;
@@ -509,9 +532,9 @@ header {
 }
 
 #work .det-link:hover {
-  -webkit-box-shadow:0 0 20px var(--flagBlue); 
-  -moz-box-shadow: 0 0 20px var(--flagBlue); 
-  box-shadow:0 0 20px var(--flagBlue);
+  -webkit-box-shadow: 0 0 20px var(--flagBlue);
+  -moz-box-shadow: 0 0 20px var(--flagBlue);
+  box-shadow: 0 0 20px var(--flagBlue);
   border-radius: 5em;
 }
 
@@ -573,7 +596,7 @@ header {
   .USA-flag {
     transform: scale(0.75);
   }
-  #teaching #container {  
+  #teaching #container {
     height: 22em;
   }
 }
@@ -581,7 +604,7 @@ header {
   .USA-flag {
     transform: scale(0.5);
   }
-  #teaching #container {  
+  #teaching #container {
     height: 14em;
   }
 }
@@ -643,7 +666,6 @@ header {
 #footer-cta h2 {
   color: var(--flagBlue);
   text-shadow: #5299d3;
-  
 }
 
 #footer-cta p {
@@ -673,38 +695,57 @@ header {
 /*** footer starts ***/
 
 #footer {
-  padding: 5em 4em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min-content;
+  /* padding: 5em 4em 2em; */
+}
+
+.footer {
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer #logo {
   background-color: var(--flagBlue);
   border-radius: 50%;
   color: #fff;
-  padding: 0.4em;
+  padding: 0.5em;
   font-family: "Maven pro", sans-serif;
   font-size: 1.6em;
   font-weight: 500;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer #copyright {
-  font-family: "Maven pro", sans-serif;
-  font-weight: 600;
+  border-radius: 50px;
   color: var(--flagBlue);
   background-color: var(--flagWhite);
-  border-radius: 25px;
-  width: 60%;
-  margin: 1.6em auto;
+  font-weight: 700;
+  max-width: max-content;
+  padding: 0.5em 1em;
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   border-radius: 50%;
-  background-size: cover;
-  margin-top: -100px;
-  margin-bottom: 40px;
+  background-size: 150%;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  background-position-x: -50px;
+  background-position-y: -70px;
 }
 
-
+@media (max-width: 400px) {
+  .profile-photo {
+    transform: scale(0.8);
+  }
+}
