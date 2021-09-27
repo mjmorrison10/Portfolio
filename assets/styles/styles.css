@@ -405,6 +405,10 @@ header {
   flex-wrap: wrap;
 }
 
+#work .frontend-mentor {
+  margin-top: 25px;
+}
+
 @media (max-width: 763px) {
   #work .my-button {
     padding: 0.5em;
