@@ -93,7 +93,7 @@ const Portfolio = (function () {
         "love creating with code!",
         "also teach programming to people.",
         "enjoy solving problems.",
-        "am a proud American citizen!",
+        "am dedicated to learning as much as possible!",
       ],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
