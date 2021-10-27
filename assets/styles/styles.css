@@ -136,6 +136,91 @@ header {
   align-items: center;
   justify-content: center;
   height: 3em;
+  position: relative;
+}
+
+.transfer {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90vw;
+  height: 90vh;
+  background-color: hsl(0, 0%, 80%, 0.5);
+  z-index: 100;
+  display: flex;
+  padding-top: 2em;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.transfer a {
+  color: hsl(240, 50%, 25%);
+  font-size: 2em;
+  font-weight: 900;
+  background-color: white;
+  padding: 1em 2em;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.transfer a:hover {
+  color: white;
+  background-color: hsl(240, 50%, 25%);
+}
+
+.transfer-link {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.transfer-arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  font-size: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #1779ba;
+  transform: rotate(45deg);
+}
+
+.transfer-close {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: hsl(0, 50%, 25%);
+}
+
+.transfer-close:hover {
+  background-color: hsl(0, 50%, 25%);
+  color: white;
 }
 
 .navbar {

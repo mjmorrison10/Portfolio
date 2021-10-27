@@ -5,6 +5,12 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
 }
 
+// New site modal
+
+const transferClose = document.querySelector(".transfer-close");
+transferClose.addEventListener("click", () => {
+  document.querySelector(".transfer").style.display = "none";
+});
 
 // JQCloud
 
